@@ -1,0 +1,116 @@
+/* Navigation */
+.main-nav {
+    
+             ul {
+                //  float: right;
+                display: flex;
+                justify-content: flex-end;
+                overflow: hidden;
+                transition: all .8s ease-out;
+        }
+    
+             li {
+                //  float: left;
+
+        }
+             a {
+                 padding: 0 1.8rem;
+                 font-size: 1.1rem;
+                 line-height: 70px;
+                //  color: #d4d4d4;
+                 color: $primary-color;
+                 text-decoration: none;
+                 display: inline-block;
+                 transition: all .5s;
+    
+                &.active, &:hover {
+                    color: $hover-light-color;
+                    // letter-spacing: .5px;
+                }
+        }
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    @media screen and (max-width: 910px) {
+        .main-nav {
+            //    display: none;
+            
+            ul {
+                position: relative;
+                top: -3px;
+                width: 100%;
+                max-height: 0;
+                background: rgba(20, 20, 20, .9);
+                flex-direction: column;
+
+                &.showing {
+                    max-height: 35em;
+                }
+            }
+
+            li {
+                width: 100%;
+                margin: 1px 0;
+                text-align: center;
+            }
+
+            a {
+                display: block;
+                color: $light-font-color;
+                padding: .6rem 0;
+                margin: .1rem .4rem;
+                border-radius: 7px;
+                box-shadow: 0 2px 1px rgba(0, 0, 0, .5);
+
+                &:hover {
+                    color: #fff;
+                    background: rgba(172, 140, 71, .9);
+                    // background: rgba(169, 155, 63, .9);
+                    transition: all .5s;
+                }
+            }
+              
+        }
+
+        .menu-btn {
+            display: block;
+            position: absolute;
+            right: 2.2rem;
+            top: 1.2rem;
+            padding: .3rem .6rem;
+            cursor: pointer;
+
+            .btn-line {
+                display: block;
+                background: #fff;
+                width: 30px;
+                height: 3px;
+                margin: .2rem 0 .3rem 0;
+                transition: .5s ease-out;
+
+            }
+
+            // Rotate into X 
+            &.close {
+            // transform: rotate(180deg);
+
+            .btn-line {
+            // top line - rotate 
+                &:nth-child(1) {
+                    transform: translate(0, 8px) rotate(45deg); 
+                }
+                // middle line - hide 
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                // bottom line - rotate 
+                &:nth-child(3) {
+                    transform: translate(0, -8px) rotate(-45deg); 
+                }
+        } 
+    }
+    }
+}

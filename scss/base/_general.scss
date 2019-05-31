@@ -1,0 +1,14 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+body {
+	background-color: $primary-color;
+	font-family: $myFont;
+}

@@ -1,0 +1,15 @@
+$headfootColor: #262626;
+$primary-color: #ac8c47;
+$hover-light-color: #e2ba65;
+$light-font-color: #f5f5f5;
+$dark-font-color: #262626;
+// $bg-color-wrapper: #cbbb98;
+// $bg-color-articles: #dad5c1;
+// $bg-color-contact: #d9b38c;
+$bg-image: url(../images/paper1.png);
+$myFont: 'Merriweather Sans', sans-serif;
+@font-face {
+	font-family: 'LCALLIG';
+	src: url('../font/LCALLIG.eot');
+	src: local('LCALLIG'), url('../font/LCALLIG.woff') format('woff'), url('../font/LCALLIG.ttf') format('truetype');
+}

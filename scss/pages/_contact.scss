@@ -1,0 +1,137 @@
+section#contact {
+    min-height: calc(100vh - 70px);
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    
+    
+    h2 {
+        font-family: 'LCALLIG' !important; 
+        color: $dark-font-color;
+        // text-transform: uppercase;
+        text-align: center;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+        
+    }
+}
+
+.contact-form {
+    flex: 1;
+    padding-top: 1.8rem;
+    background: darken($primary-color, 10%);
+
+}
+
+.input-field {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 2.5rem;
+
+    input, textarea {
+        width: 100%;
+        padding: .6rem 0;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(0,0,0,.2);
+        color: rgba(0,0,0,.6);
+        font-size: 1.1rem;
+        font-family: inherit; // ovo zbog textarea
+        // resize: none;  
+
+        &:focus + label, &:valid + label {
+            top: -1.5rem;
+            font-size: .8rem;
+            font-weight: bold;
+            padding: .1rem .3rem;
+            // background: #6b3aff;
+            color: #6b3aff;
+        }
+
+        &:focus, &:valid {
+            border-bottom: 1px solid #6b3aff;
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: .3rem 0;
+        pointer-events: none;
+        color: rgba(0,0,0,.5);
+        font-size: 1rem;
+        transition: .5s;
+    }
+}
+
+input[type="submit"] {
+    width: 80%;
+    display: block;
+    margin: 3.75rem auto 1.8rem;
+    background: $primary-color;
+    color: $light-font-color;
+    padding: 1rem 1.8rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+        background: darken($primary-color, 20%);
+        color: #fff;
+    }
+}
+
+.company-info {
+    flex: 1;
+    padding-top: 1.8rem;
+    
+    p {
+        color: $dark-font-color;
+        font-size: 1.1rem;
+        line-height: 1.5;
+        padding-left: 1.2rem;
+        // text-align: justify;
+        // margin-bottom: .5rem;    
+    }
+
+    // h3 {
+    //     text-align: center;
+    //     font-size: 1.8rem;
+    //     font-weight: 700;
+    //     margin: 1.5rem 0;
+    // }
+
+    .map {
+        margin-top: 2rem;
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        // height: 0;
+        
+        iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+ }
+
+ @media screen and (max-width: 910px) {
+    section#contact {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        height: 100vh;
+    }
+
+}

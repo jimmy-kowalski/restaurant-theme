@@ -1,0 +1,69 @@
+/* Footer */
+
+footer {
+    // clear: both;
+    background-color: $headfootColor;
+    color: $light-font-color;
+    padding: 1.8rem 0;
+    // height: 100px;
+    position: relative;
+
+  // logo kao pozadinska slika
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url(../images/podbara_small.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;
+  }  
+
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: -.6rem;
+    // padding: 10px 0;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    // justify-content: space-between;
+    margin: 1rem 0;
+
+    li a {
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      margin: 0 5px;
+      font-size: 2.2rem;
+      color: $primary-color;
+      border-radius: 50%;
+      opacity: 0.8;
+      transition: .5s;
+
+      &:hover {
+        opacity: 1;
+        color: #fff;
+        background: $hover-light-color;
+        // background: #a99b3f;
+
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+
+  }
+}
+

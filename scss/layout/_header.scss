@@ -1,0 +1,41 @@
+header {
+    position: fixed;
+    background-color: $headfootColor;
+    height: 70px;
+    width: 100%;
+    z-index: 10;
+}
+.center {
+    // width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: .6rem 0;
+    
+    img {
+        width: 260px;
+        
+    }
+//     h1 a {
+//         color: #fff;
+//         text: {
+//             transform: uppercase;
+//             decoration: none;}
+//         font: {
+//             weight: 700;
+//             size: 40px;}
+// }
+}
+
+@media screen and (max-width: 610px) {
+    .logo {
+                
+        img {
+            width: 240px;
+            
+        }
+    }
+}

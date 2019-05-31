@@ -1,0 +1,96 @@
+.wrapper-articles {
+    min-height: calc(100vh - 100px);
+    // height: 100%;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    background: $bg-image;
+    padding: 4.5rem 0;
+
+}
+
+.food {
+    width: 80%;
+    height: auto;
+    background: #efefef;
+    color: $dark-font-color;
+    margin: 2.5rem auto;
+    padding: 2.5rem 5rem;
+    box-shadow: 0 8px 30px rgba(0,0,0, .3);
+
+    img {
+        width: 35vw;
+        float: left;
+        margin: 0 1em 1em 0; 
+    
+    &.chicken-dippers {
+        clip-path: ellipse(48.41% 50.9% at 43.78% 49.23%);
+        shape-outside: ellipse(48.41% 50.9% at 43.78% 49.23%);  
+    }
+
+    &.grilled-dish {
+        clip-path: circle(47.77% at 43.41% 56.37%);
+        shape-outside: circle(47.77% at 43.41% 56.37%);
+    }
+
+    &.fish {
+        margin: 1em 1em 1em 0; 
+        clip-path: ellipse(50% 43.31% at 47.49% 53.74%);
+        shape-outside: ellipse(50% 43.31% at 47.49% 53.74%);
+    }
+
+    &.beef-stake {
+        margin: 1em 1em 1em 0; 
+        clip-path: ellipse(50% 43.31% at 47.28% 60.34%);
+        shape-outside: ellipse(50% 43.31% at 47.28% 60.34%);
+    }
+
+    &.pasta {
+        margin: 1em 1em 1em 0; 
+        shape-outside: polygon(48.18% 2.86%, 74.94% 9.88%, 95.14% 33.8%, 95.14% 68.8%, 75.14% 95.09%, 50.4% 96.71%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    }
+
+    &.pizza {
+        
+        clip-path: circle(39.05% at 50.95% 49.67%);
+        shape-outside: circle(39.05% at 50.95% 49.67%);
+        // clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        // shape-outside: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+
+    }
+      
+    &.chicken-grill {
+        margin: 1em 1em 1em 0; 
+        // clip-path: polygon(36.91% -0.12%, 60.88% 15.6%, 78.96% 35.82%, 75.95% 46.94%, 76.37% 55.06%, 88.65% 69.31%, 100.79% 85.2%, 97.74% 99.87%, 88% 100.68%, 55.41% 100.81%, -0.18% 97.83%, 0% 70%, 0% 35%, 0.02% 0.08%, 22.4% 0.31%);
+        // shape-outside: polygon(36.91% -0.12%, 60.88% 15.6%, 78.96% 35.82%, 75.95% 46.94%, 76.37% 55.06%, 88.65% 69.31%, 100.79% 85.2%, 97.74% 99.87%, 88% 100.68%, 55.41% 100.81%, -0.18% 97.83%, 0% 70%, 0% 35%, 0.02% 0.08%, 22.4% 0.31%);
+    }
+
+    &.pancakes {
+        margin: 1em 1em 1em 0;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+        shape-outside: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+        // clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        // shape-outside: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    }
+
+    &.cakes {
+        margin: 1em 1em 1em 0;
+        clip-path: polygon(60.57% 17.14%, 60.97% 33.78%, 78.87% 34.16%, 87.15% 48.91%, 93.86% 70.53%, 93.22% 88.88%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+        shape-outside: polygon(60.57% 17.14%, 60.97% 33.78%, 78.87% 34.16%, 87.15% 48.91%, 93.86% 70.53%, 93.22% 88.88%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    }
+  }
+  
+    h1 {
+        font-family: 'LCALLIG' !important;
+        font-size: 2.2rem;
+        margin-left: 15vw;
+        margin-bottom: 1.8rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 1.2rem;
+    }
+}
+

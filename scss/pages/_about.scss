@@ -1,0 +1,136 @@
+// ovaj kod gde se pravi slanted div uz pomoc bordera radi u firefoxu i exploreru, ali ne i u chrome i operi 
+// section#about {
+//     height: 100vh;
+//     max-width: 1400px;
+//     width: 100%;
+//     margin: 0 auto;
+//     background: #262626;
+//     display: flex;
+
+// }
+
+// .img-left {
+    
+//     width: calc(50% + 75px);
+//     height: 100%;
+//     // background: #f00;
+//     border-right: 150px solid #262626;
+//     border-bottom: 100vh solid transparent;
+//     background: url(../images/food01.jpeg);
+//     background-position: -100px 0;
+    
+    
+// }
+
+// .about-content {
+//     width: calc(50% - 75px);
+//     height: 100%;
+//     background: #262626;
+//     color: #fff;
+//     padding: 50px 80px;
+// }
+
+// druga varijanta 
+section#about {
+        height: calc(100vh - 70px);
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+        background: url(../images/food01.jpeg);
+        background-position: -100px -80px;
+        position: relative;
+        z-index: -2;
+}
+
+.about-content {
+        position: relative;
+        float: right;
+        width: 40%;
+        height: 100%;
+        background: $headfootColor;
+        color: $light-font-color;
+        padding: 3rem 4.2rem;
+        
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: inherit;
+            z-index: -1;
+            height: 100%;
+            width: 80%;
+            top: 0px;
+            left: 0px;
+            transform-origin: bottom left;
+            transform: skewX(18deg);
+            
+        }
+
+        h2 {
+            font-family: 'LCALLIG' !important;    
+            // text-transform: uppercase;
+            text-align: left;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        //     text-align: justify;
+            margin-bottom: 1rem;    
+        }
+
+}
+
+@media screen and (max-width: 910px) {
+        section#about {
+                background-position: center;
+                background-size: cover;
+                padding: 2% 5%;
+        }
+
+        .about-content {
+                float: none;
+                width: 100%;
+                // height: 90vh;
+                // margin: auto;
+                background: rgba(38, 38, 38, .9);
+                color: #fff;
+                padding: 3rem 5rem;
+                border-radius: 20px;
+
+                &::after {
+                        display: none;
+                }
+
+                h2 {
+                     text-align: center;
+                     font-size: 2.2rem;
+                     margin-bottom: 1.5rem;
+                }
+            
+                p {
+                     font-size: 1.1rem;
+                     line-height: 1.6;
+                     text-align: justify;
+                           
+                }
+        }
+}
+
+@media screen and (max-width: 550px) {
+        .about-content {
+                h2 {
+                     font-size: 2rem;
+                        
+                }
+            
+                p {
+                     font-size: 1rem;
+                     line-height: 1.5;   
+                }
+        }
+}
+
